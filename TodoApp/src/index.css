@@ -1,0 +1,238 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/* -----------> HOME.js <----------- */
+table {
+    color: black;
+    background-color: aliceblue;
+    margin: 10rem auto 3rem auto;
+    padding: 20px;
+    width: 50%;
+    border-radius: 0px 44px 0px 79px;
+    -webkit-border-radius: 0px 44px 0px 79px;
+    -moz-border-radius: 0px 44px 0px 79px;
+    transition: .3s cubic-bezier(0.19, 1, 0.22, 1);
+    max-height: 40vh;
+  }
+td {
+  text-align: center;
+}
+table:hover {
+  border-radius: 43px 0px 77px 0px;
+-webkit-border-radius: 43px 0px 77px 0px;
+-moz-border-radius: 43px 0px 77px 0px;
+}
+
+
+table tr .modify {
+  background-color: #1ac317;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  padding: 7px;
+}
+
+table tr .modify:hover {
+  background-color: #0f9a0d;
+}
+table tr .delete {
+  background-color: #e21111;;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  padding: 7px;
+}
+
+table tr .delete:hover {
+  background-color: #cc1111;
+}
+
+
+
+/* ------------------------------- */
+
+
+.add-list {
+    background-color: #fff;
+    border: 0 solid #e2e8f0;
+    border-radius: 1.5rem;
+    box-sizing: border-box;
+    color: #0d172a;
+    cursor: pointer;
+    font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1;
+    padding: 1rem 1.6rem;
+    text-align: center;
+    text-decoration: none #0d172a solid;
+    text-decoration-thickness: auto;
+    transition: all .1s cubic-bezier(.4, 0, .2, 1);
+    box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    display: flex;
+    margin: 0 auto;
+}
+.add-list:hover {
+  background-color: #1e293b;
+  color: #fff;
+}
+
+
+
+
+
+/* ---------------------- */
+
+.addList {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.addList input {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 3px;
+  outline: none;
+  padding: 10px 5px;
+  color: white;
+  width: 40%;
+  margin-right: 5px;
+  
+}
+.addList input::placeholder {
+  color: white;
+}
+.addList button {
+  background: linear-gradient(330deg,#2f7baf 50%, #73d0ff 80%);
+  border: 0;
+  border-radius: 0px 101px 101px 0px;
+-webkit-border-radius: 0px 101px 101px 0px;
+-moz-border-radius: 0px 101px 101px 0px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+.addList button:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.addList button:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+/* --------------------------- */
+
+
+
+
+
+
+
+
+
+.editList {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.editList input {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 3px;
+  outline: none;
+  padding: 10px 5px;
+  color: white;
+  width: 35%;
+  margin-right: 5px;
+}
+.editList input::placeholder {
+  color: white;
+}
+.editList button {
+  background: linear-gradient(330deg,#1c9818 50%, #24e920 80%);
+  border: 0;
+  border-radius: 0px 101px 101px 0px;
+-webkit-border-radius: 0px 101px 101px 0px;
+-moz-border-radius: 0px 101px 101px 0px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+.editList button:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.editList button:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+
+
+
+
+
+
+
+
+/* --------------------- */
+@media (max-width: 768px) {
+  table {
+    margin: 6rem auto 1.5rem auto;
+    padding: 8px;
+    width: 90%;
+    font-size: 20px;
+    border-radius: 0px 24px 0px 49px;
+  }
+  .add-list {
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
+  }
+
+  .addList input,
+  .editList input {
+    width: 60%;
+  }
+}
